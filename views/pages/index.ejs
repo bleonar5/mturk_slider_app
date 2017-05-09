@@ -701,7 +701,7 @@
 						var circ = d3.select(this).attr("cy",Math.max(3,parseInt(75 - offset * stack)) + "%");
 						//updates tooltip
 						circ.select("title").text( function(d) {
-							return d.adj + " = " + circleData[i].val + d.def;});
+							return d.adj + " = " + circleData[i].val + '\n' + d.def;});
 					});
 					update_form();
 				};
